@@ -5,7 +5,19 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+/* static char *font = "PixelMplus12:style=Regular:pixelsize=24"; */
+/* static char *font = "-UW-Ttyp0-Medium-R-Normal--16-150-75-75-C-80-UW-Fontspecific"; */
+/* static char *font = "Bm437 IBM Model3x Alt4:style=Regular:pixelsize=24:antialias=false:autohint=true"; */
+/* static char *font = "IBM Plex Mono:style=Medium:pixelsize=24:antialias=false:autohint=true"; */
+/* static char *font = "Terminus:style=Regular:pixelsize=18:antialias=false:autohint=true"; */
+static char *font = "UW Ttyp0:style=Regular:pixelsize=18:antialias=false:autohint=true";
+/* Spare fonts */
+static char *font2[] = {
+                     "mononoki Nerd Font Mono:style=Regular:pixelsize=12:antialias=false:autohint=true"
+/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
+/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+};
+
 
 /* disable bold, italic and roman fonts globally */
 int disablebold = 0;
@@ -32,7 +44,7 @@ static unsigned int borderless = 0;
 /* allow infelicity between the weights: */
 unsigned int max_bold_weight_infelicity = 20;
 
-static unsigned int borderpx = 2;
+static unsigned int borderpx = 16;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -86,7 +98,7 @@ static double maxlatency = 33;
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-static unsigned int blinktimeout = 800;
+static unsigned int blinktimeout = 400;
 
 /*
  * thickness of underline and bar cursors
@@ -138,7 +150,7 @@ char *termname = "xst-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 1.0;
+float alpha = 0.95;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -166,9 +178,9 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
-	"#555555",
+	"#222222",
 	"black",
-	"gray90",
+	"#FEFEFE",
 };
 
 
@@ -176,10 +188,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 2;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 5;
+static unsigned int defaultrcs = 1;
 
 /*
  * Default shape of cursor
@@ -188,7 +200,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers
