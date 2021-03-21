@@ -2,7 +2,7 @@ xst 0.8.4
 =========  
   
 ### About  
-This is xst fork form [gnotclub](https://github.com/gnotclub/xst).  
+This is xst fork from [gnotclub](https://github.com/gnotclub/xst).  
   
 ### Installation
   
