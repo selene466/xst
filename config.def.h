@@ -10,7 +10,7 @@
 /* static char *font = "Bm437 IBM Model3x Alt4:style=Regular:pixelsize=24:antialias=false:autohint=true"; */
 /* static char *font = "IBM Plex Mono:style=Medium:pixelsize=24:antialias=false:autohint=true"; */
 /* static char *font = "Terminus:style=Regular:pixelsize=18:antialias=false:autohint=true"; */
-static char *font = "UW Ttyp0:style=Regular:pixelsize=18:antialias=false:autohint=true";
+static char *font = "Terminus:style=Regular:pixelsize=18:antialias=false:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
                      "mononoki Nerd Font Mono:style=Regular:pixelsize=12:antialias=false:autohint=true"
